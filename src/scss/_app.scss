@@ -1,0 +1,31 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+	font-size: 14px;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: $font;
+  min-height: 100vh;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.container {
+  max-width: 1040px;
+  padding: 36px;
+  margin: 0 auto;
+}
