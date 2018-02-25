@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 import routes from '../../routes';
-// import Footer from './Footer';
+import Footer from './Footer';
 
 const App = (props) => {
   const Route = _.find(routes, { path: props.app.path });
@@ -11,6 +11,7 @@ const App = (props) => {
   return (
     <div>
       <Route.component {...props} />
+      <Footer />
     </div>
   );
 };
